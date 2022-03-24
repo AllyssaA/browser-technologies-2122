@@ -1,7 +1,18 @@
-body{
+body {
     height: 150em;
 }
 
-main{
+main {
     position: relative;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+main img {
+    width: 50%;
+}
+
+footer {
+    margin-left: 2em;
+    margin-right: 2em;
 }
