@@ -1,0 +1,28 @@
+{
+  "name": "browser-technologies-2122",
+  "version": "1.0.0",
+  "description": "This project is for Browser technologies",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllyssaA/browser-technologies-2122.git"
+  },
+  "author": "AllyssaA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AllyssaA/browser-technologies-2122/issues"
+  },
+  "homepage": "https://github.com/AllyssaA/browser-technologies-2122#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
