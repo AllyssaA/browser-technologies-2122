@@ -1,5 +1,87 @@
-<%- include('partials/head'); %> 
+<%- include('partials/head'); %>
+<header>
+  <h1>Enquête minor Web Development</h1>
+</header>
+<form>
+  <h2>1. Studentgegevens</h2>
+  <legend>Vul je naam in</legend>
+  <input id="name" name="name" type="text" required />
 
+  <legend>Vul je studentnummer in</legend>
+  <input id="student_number" name="student_number" type="text" required />
 
+  <h2>2. Web App From Scratch</h2>
+  <legend>In welke weken heb je het vak Web App From Scratch gevolgd?</legend>
 
-<%- include('partials/footer'); %> 
+  <div>
+    <input
+      type="radio"
+      value="1"
+      required
+      name="wafs-period"
+      id="wafs-period-1"
+    />
+    <label for="wafs-period-1">Week 1 tot en met 4</label>
+  </div>
+  <div>
+    <input
+      type="radio"
+      value="2"
+      required
+      name="wafs-period"
+      id="wafs-period-2"
+    />
+    <label for="wafs-period-2">Week 5 tot en met 8</label>
+  </div>
+  <div>
+    <input
+      type="radio"
+      value="3"
+      required
+      name="wafs-period"
+      id="wafs-period-3"
+    />
+    <label for="wafs-period-3">Week 9 tot en met 12</label>
+  </div>
+
+  <legend>Van wie heb je les gekregen bij het vak Web App From Scratch?</legend>
+  <div>
+    <input type="radio" name="wafs-teacher" id="wafs-teacher-1" value="1" />
+    <label for="wafs-teacher-1">Joost & Koop</label>
+  </div>
+  <div>
+    <input type="radio" name="wafs-teacher" id="wafs-teacher-2" value="2" />
+    <label for="wafs-teacher-2">Vasilis & Sanne</label>
+  </div>
+  <div>
+    <input type="radio" name="wafs-teacher" id="wafs-teacher-3" value="3" />
+    <label for="wafs-teacher-3">Justus & Declan</label>
+  </div>
+  <div>
+    <input type="radio" name="wafs-teacher" id="wafs-teacher-4" value="4" />
+    <label for="wafs-teacher-4">Weet ik niet meer</label>
+  </div>
+
+  <legend>Wat voor cijfer geef je het vak Web App From Scratch? </legend>
+  
+    <input type="radio" name="wafs-rating" id="wafs-rating-1" value="1" />
+    <label for="wafs-rating-1">1</label>
+ 
+    <input type="radio" name="wafs-rating" id="wafs-rating-2" value="2" />
+    <label for="wafs-rating-2">2</label>
+
+    <input type="radio" name="wafs-rating" id="wafs-rating-3" value="3" />
+    <label for="wafs-rating-3">3</label>
+
+    <input type="radio" name="wafs-rating" id="wafs-rating-4" value="4" />
+    <label for="wafs-rating-4">4</label>
+
+    <input type="radio" name="wafs-rating" id="wafs-rating-5" value="5" />
+    <label for="wafs-rating-5">5</label>
+
+    <input type="radio" name="wafs-rating" id="wafs-rating-6" value="6" />
+    <label for="wafs-rating-6">6</label>
+
+</form>
+
+<%- include('partials/footer'); %>
