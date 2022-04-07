@@ -42,14 +42,7 @@ main {
   margin-bottom: 4rem;
 }
 
-/* .wrapper{
-    position: relative;
-    display: flex;
-    border: 1px solid #d1d5db;
-} */
-
 /* form  */
-
 fieldset {
   margin-top: 2rem;
   border: 0;
@@ -91,7 +84,7 @@ input[type="radio"] {
   display: inline-block;
   width: 1em;
   height: 1em;
-  color: var(--color-primary);
+  color: var(--color-green);
   background-color: #fff;
   border: 1px solid #d1d5db;
   border-radius: 100%;
