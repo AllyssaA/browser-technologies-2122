@@ -1,5 +1,8 @@
 # Browser Technologies @cmda-minor-web 20-21 
 
+## Live Demo
+[Demo](https://minor-enquete.herokuapp.com/)
+
 ## Eindopdracht - Enquete over de minor Web Development
 
 > Ik wil een enquête kunnen invullen over de minor Web Development, met verschillende antwoordmogelijkheden. Als ik de enquête niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
