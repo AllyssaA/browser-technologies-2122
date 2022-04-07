@@ -5,20 +5,24 @@
 > Ik wil een enquête kunnen invullen over de minor Web Development, met verschillende antwoordmogelijkheden. Als ik de enquête niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
 
 ### Core functionaliteit
-- [x] een enquête kunnen invullen en versturen
+- [x] een enquête kunnen invullen
+- [x] enquête versturen
 
 ## Breakdownschets
-![Breakdownschets](/images/sketch.JPG)
+<img src="https://github.com/AllyssaA/browser-technologies-2122/blob/main/static/images/sketch.jpg" width="500">
+
 
 ## Functional layer
-![Layer 1](/images/layer.JPG)
+<img src="https://github.com/AllyssaA/browser-technologies-2122/blob/main/static/images/layer1.JPG" width="500">
+
 
 ## Useable layer
 Useable layer heeft toegevoegde styling om de gebruikerservaring te verbeteren.
-![Layer 2](/images/useablelayer.JPG)
+<img src="https://github.com/AllyssaA/browser-technologies-2122/blob/main/static/images/usablelayer.JPG" width="500">
 
-## Pleasureable layer
-![Layer 3]()
+
+<!-- ## Pleasureable layer -->
+
 ## Tests
 
 De website is getest op de volgende webbrowsers:
