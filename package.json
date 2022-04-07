@@ -20,9 +20,12 @@
   },
   "homepage": "https://github.com/AllyssaA/browser-technologies-2122#readme",
   "dependencies": {
-    "body-parser": "^1.19.2",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.3",
+    "file-system": "^2.2.2",
+    "mongodb": "^4.5.0",
     "nodemon": "^2.0.15"
   }
 }
