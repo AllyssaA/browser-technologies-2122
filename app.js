@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
   });
 });
 
-let userInput;
+let result;
 
 app.post("/", async (req, res) => {
   console.log(req.body);
@@ -63,7 +63,6 @@ app.post("/", async (req, res) => {
     await client.close();
     res.render("verzonden", {
       pageTitle: "Antwoorden verzonden",
-
     });
   }
 });
