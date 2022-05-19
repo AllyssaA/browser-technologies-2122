@@ -37,39 +37,39 @@ let result;
 
 app.post("/", async (req, res) => {
   console.log(req.body);
-  try {
-    await client.connect();
-    const database = client.db("enquete");
-    const collection = database.collection("entries");
-    const document = {
-      name: req.body.name,
-      studentId: req.body.student_number,
-      wafs: {
-        period: req.body.wafs_period,
-        teacher: req.body.wafs_teacher,
-        rating: req.body.wafs_rating,
-        difficultly: req.body.wafs_moeilijkheid,
-        description: req.body.wafs_uitleg,
-        score: req.body.wafs_selfrating,
-      },
-      cttr: {
-        period: req.body.cttr_period,
-        teacher: req.body.cttr_teacher,
-        rating: req.body.cttr_rating,
-        difficultly: req.body.cttr_moeilijkheid,
-        description: req.body.cttr_uitleg,
-        score: req.body.cttr_selfrating,
-      },
-    };
-    await collection.insertOne(document).then(`inserted ${document.name}`);
-  } catch (error) {
-    console.warn(error);
-  } finally {
-    await client.close();
-    res.render("verzonden", {
-      pageTitle: "Antwoorden verzonden",
-    });
-  }
+  // try {
+  //   await client.connect();
+  //   const database = client.db("enquete");
+  //   const collection = database.collection("entries");
+  //   const document = {
+  //     name: req.body.name,
+  //     studentId: req.body.student_number,
+  //     wafs: {
+  //       period: req.body.wafs_period,
+  //       teacher: req.body.wafs_teacher,
+  //       rating: req.body.wafs_rating,
+  //       difficultly: req.body.wafs_moeilijkheid,
+  //       description: req.body.wafs_uitleg,
+  //       score: req.body.wafs_selfrating,
+  //     },
+  //     cttr: {
+  //       period: req.body.cttr_period,
+  //       teacher: req.body.cttr_teacher,
+  //       rating: req.body.cttr_rating,
+  //       difficultly: req.body.cttr_moeilijkheid,
+  //       description: req.body.cttr_uitleg,
+  //       score: req.body.cttr_selfrating,
+  //     },
+  //   };
+  //   await collection.insertOne(document).then(`inserted ${document.name}`);
+  // } catch (error) {
+  //   console.warn(error);
+  // } finally {
+  //   await client.close();
+  //   res.render("verzonden", {
+  //     pageTitle: "Antwoorden verzonden",
+  //   });
+  // }
 });
 
 app.listen(port, () => {

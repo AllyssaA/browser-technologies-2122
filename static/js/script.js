@@ -76,6 +76,7 @@ import getFormData from './formData.js'
 
         btnPrev = btnNext.cloneNode()
         btnPrev.innerText = 'Terug'
+
         if(activeQuestion === 1) {
             btnPrev.classList.add('invisible')
         }
@@ -161,7 +162,6 @@ import getFormData from './formData.js'
 
                         nextSection.classList.remove('hidden')
                         nextSection.classList.add('active')
-
                     }      
                 }
 
@@ -190,8 +190,8 @@ import getFormData from './formData.js'
                 } else {
                     btnPrev.classList.remove('invisible')  
                 }
-                
-                if (activeQuestion === question.length) {
+                const formQuestions = document.querySelectorAll('.question')
+                if (activeQuestion === formQuestions.length) {
                     btnNext.classList.add('hidden')
                     btnSubmit.classList.remove('hidden')
                   } else {
@@ -263,7 +263,7 @@ import getFormData from './formData.js'
 
     function handleFormSubmit(e) {
         e.preventDefault()
-        alert('Form submitted')
+        alert('Antwoorden zijn verstuurd!')
     }
 
 }())
