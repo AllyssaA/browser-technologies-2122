@@ -12,6 +12,7 @@ import getFormData from './formData.js'
     const formInput = form.querySelectorAll('input')
     const formSelect = form.querySelectorAll('select')
     const btnSubmit = form.querySelector('.btn-submit')
+    const formQuestions = document.querySelectorAll('.question')
 
     let activeQuestion = 1
 
@@ -190,7 +191,7 @@ import getFormData from './formData.js'
                 } else {
                     btnPrev.classList.remove('invisible')  
                 }
-                const formQuestions = document.querySelectorAll('.question')
+                
                 if (activeQuestion === formQuestions.length) {
                     btnNext.classList.add('hidden')
                     btnSubmit.classList.remove('hidden')
@@ -218,7 +219,7 @@ import getFormData from './formData.js'
     // Set correct width progress bar
     function updateProgressIndicator() {
         form.dataset.activeQuestion = activeQuestion
-        progressBar.style.transform = `scaleX(${activeQuestion / question.length})`
+        progressBar.style.transform = `scaleX(${activeQuestion / formQuestions.length})`
     }
 
     function updateActiveQuestion(value) {
