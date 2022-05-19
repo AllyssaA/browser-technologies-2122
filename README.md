@@ -24,7 +24,17 @@ Useable layer heeft toegevoegde styling om de gebruikerservaring te verbeteren.
 <img src="https://github.com/AllyssaA/browser-technologies-2122/blob/main/static/images/usablelayer.JPG" width="500">
 
 
-<!-- ## Pleasureable layer -->
+## Pleasureable layer
+Om de pleasureable layer toe te voegen heb ik de volgende functies toegevoegd:
+- progress bar indicator, om te laten zien hoe ver de gebruiker in het proces van de enquete zit
+- een vraag per keer om de gebruiker niet te overweldigen met een lange lijst van vragen
+- localstorage om de antwoorden op te slaan voor de gebruiker, de gebruiker heeft dan de optie om op een ander moment verder te gaan met de enquete
+
+
+
+<img src="https://github.com/AllyssaA/browser-technologies-2122/blob/main/static/images/pleasureablelayer.png">
+
+
 
 ## Tests
 
