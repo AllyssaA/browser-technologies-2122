@@ -1,8 +1,13 @@
-require("dotenv").config();
-const express = require("express");
-const fs = require("file-system");
-const bodyParser = require("body-parser");
-const { MongoClient } = require("mongodb");
+import 'dotenv/config';
+import express from 'express';
+import { fs } from 'file-system';
+import bodyParser from 'body-parser';
+import { MongoClient } from 'mongodb';
+// require("dotenv").config();
+// const express = require("express");
+// const fs = require("file-system");
+// const bodyParser = require("body-parser");
+// const { MongoClient } = require("mongodb");
 
 const app = express();
 const port = process.env.PORT || 7000;

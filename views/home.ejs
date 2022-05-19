@@ -3,25 +3,28 @@
   <h1>Enquête minor Web Development</h1>
 </header>
 <main>
-  <form method="post" enctype="application/x-www-form-urlencoded" action="/">
-    <h2>1. Studentgegevens</h2>
-    <fieldset>
-      <legend>Vul je gegevens in</legend>
-      <label for="name">Naam: </label><input id="name" name="name" type="text" required placeholder="Naam" />
+  <form method="post" action="/" >
+    <section class="section">
+      <h2>1. Studentgegevens</h2>
+      <fieldset class="question" data-error="Vul een naam en studentnummer in.">
+        <legend>Vul je gegevens in</legend>
+        <label for="name">Naam: </label><input id="name" name="name" type="text" required placeholder="Naam" />
+        </label>
+        <label for="student_number">Studentnummer
+        <input
+          id="student_number"
+          name="student_number"
+          type="number"
+          required
+          placeholder="Studentnummer"
+        />
       </label>
-      <label for="student_number">Studentnummer
-      <input
-        id="student_number"
-        name="student_number"
-        type="number"
-        required
-        placeholder="Studentnummer"
-      />
-    </label>
-    </fieldset>
+      </fieldset>
+    </section>
 
+    <section class="section">
     <h2>2. Web App From Scratch</h2>
-    <fieldset>
+    <fieldset class="question" data-error="Maak een keuze">
       <legend>
         In welke weken heb je het vak Web App From Scratch gevolgd?
       </legend>
@@ -58,7 +61,7 @@
       </div>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="question" data-error="Maak een keuze" >
       <legend>
         Van wie heb je les gekregen bij het vak Web App From Scratch?
       </legend>
@@ -100,7 +103,7 @@
       </div>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="question" data-error="Maak een keuze">
       <legend>Wat voor cijfer geef je het vak Web App From Scratch?</legend>
       <div class="wrapper">
         <input type="radio" name="wafs_rating" id="wafs-rating-1" value="1" />
@@ -135,7 +138,7 @@
       </div>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="question" data-error="Maak een keuze">
       <legend>Hoe moeilijk vond je Web App From Scratch?</legend>
       <select name="wafs_moeilijkheid" id="wafs_moeilijkheid" required>
         <option value="" selected disabled>Selecteer je mening</option>
@@ -145,7 +148,7 @@
         <option value="heel_makkelijk">Heel makkkelijk</option>
       </select>
     </fieldset>
-    <fieldset>
+    <fieldset class="question" data-error="Maak een keuze">
       <legend>Hoe duidelijk vond je de uitleg van Web App From Scratch?</legend>
       <select name="wafs_uitleg" id="wafs_uitleg" required>
         <option value="" selected disabled>Selecteer je mening</option>
@@ -155,7 +158,7 @@
       </select>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="question" data-error="Maak een keuze">
       <legend>
         Geef jezelf een cijfer over hoe goed je Web App From Scratch snapt.
       </legend>
@@ -239,9 +242,10 @@
       />
       <label for="wafs_selfrating_10">10</label>
     </fieldset>
-
+    </section>
+    <section class="section">
     <h2>3. CSS To The Rescue</h2>
-    <fieldset>
+    <fieldset class="question" data-error="Maak een keuze">
       <legend>In welke weken heb je het vak CSS To The Rescue gevolgd?</legend>
 
       <div>
@@ -276,7 +280,7 @@
       </div>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="question" data-error="Maak een keuze">
       <legend>
         Van wie heb je les gekregen bij het vak CSS To The Rescue?
       </legend>
@@ -318,7 +322,7 @@
       </div>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="question" data-error="Maak een keuze">
       <legend>Wat voor cijfer geef je het vak CSS To The Rescue?</legend>
 
       <input type="radio" name="cttr_rating" id="cttr-rating-1" value="1" />
@@ -352,7 +356,7 @@
       <label for="cttr-rating-10">10</label>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="question" data-error="Maak een keuze">
       <legend>Hoe moeilijk vond je CSS To The Rescue?</legend>
       <select name="cttr_moeilijkheid" id="cttr_moeilijkheid" required>
         <option value="" selected disabled>Selecteer je mening</option>
@@ -362,7 +366,7 @@
         <option value="heel_makkelijk">Heel makkkelijk</option>
       </select>
     </fieldset>
-    <fieldset>
+    <fieldset class="question" data-error="Maak een keuze">
       <legend>Hoe duidelijk vond je de uitleg van CSS To The Rescue?</legend>
       <select name="cttr_uitleg" id="cttr_uitleg" required>
         <option value="" selected disabled>Selecteer je mening</option>
@@ -372,7 +376,7 @@
       </select>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="question" data-error="Maak een keuze">
       <legend>
         Geef jezelf een cijfer over hoe goed je CSS To The Rescue snapt.
       </legend>
@@ -456,9 +460,12 @@
       />
       <label for="cttr_selfrating_10">10</label>
     </fieldset>
+    </section>
 
-    <button type="submit">Verstuur antwoorden</button>
+    <div class="navigation js-navigation">
+      <button class="button btn-submit" type="submit">Verstuur antwoorden</button>
+    </div>
   </form>
 
   <%- include('partials/footer'); %>
-</main>
+

@@ -18,6 +18,7 @@ body {
   line-height: 1.4;
   color: var(--color-white);
   margin: 0;
+  padding: 1em
 }
 body::before {
   content: "";
@@ -103,7 +104,7 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-
+  margin: 1em;
   background-color: #2563eb;
   color: #fff;
   padding: 0.5rem 1rem;
@@ -121,4 +122,30 @@ button:hover {
 button:active,
 button:focus {
   background-color: orange;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.active {
+  display: block;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error-message {
+  display: inline-flex;
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
 }
